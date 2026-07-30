@@ -1,0 +1,7 @@
+product_id,sku,product_name,category
+1,ANL-100,Analytics Starter Pack,Software
+2,DWH-220,Data Warehouse Connector,Software
+3,TRN-310,BI Enablement Workshop,Services
+4,SUP-410,Premium Support Plan,Support
+5,GOV-510,Data Governance Assessment,Services
+

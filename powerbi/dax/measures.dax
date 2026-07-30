@@ -1,0 +1,61 @@
+Total Revenue =
+SUM ( SalesRecords[revenue] )
+
+Total Profit =
+SUM ( SalesRecords[profit] )
+
+Units Sold =
+SUM ( SalesRecords[quantity] )
+
+Total Orders =
+DISTINCTCOUNT ( SalesRecords[orderNumber] )
+
+Average Order Value =
+DIVIDE ( [Total Revenue], [Total Orders] )
+
+Profit Margin % =
+DIVIDE ( [Total Profit], [Total Revenue] )
+
+Revenue Previous Month =
+CALCULATE (
+    [Total Revenue],
+    DATEADD ( 'Date'[Date], -1, MONTH )
+)
+
+Revenue MoM % =
+DIVIDE (
+    [Total Revenue] - [Revenue Previous Month],
+    [Revenue Previous Month]
+)
+
+Profit Previous Month =
+CALCULATE (
+    [Total Profit],
+    DATEADD ( 'Date'[Date], -1, MONTH )
+)
+
+Profit MoM % =
+DIVIDE (
+    [Total Profit] - [Profit Previous Month],
+    [Profit Previous Month]
+)
+
+Revenue Rank by Category =
+RANKX (
+    ALL ( SalesRecords[category] ),
+    [Total Revenue],
+    ,
+    DESC
+)
+
+Top Category Revenue =
+CALCULATE (
+    [Total Revenue],
+    TOPN (
+        1,
+        ALL ( SalesRecords[category] ),
+        [Total Revenue],
+        DESC
+    )
+)
+
