@@ -1,6 +1,6 @@
 # Business Intelligence Dashboard - Power BI Project
 
-Portfolio project showing a Java 8 Spring Boot data service that feeds a Power BI business intelligence dashboard. The project includes REST APIs, Hibernate/JPA persistence, SQL aggregation examples, sample data, Power Query scripts, DAX measures, validation, exception handling, and JUnit/Mockito tests.
+Portfolio project showing a Java 8 Spring Boot data service that feeds a Power BI business intelligence dashboard. The project includes REST APIs, SQL aggregation examples, sample data, Power Query scripts, DAX measures, validation, exception handling, and JUnit/Mockito tests.
 
 ## What This Shows
 
@@ -22,28 +22,6 @@ flowchart LR
     PQ --> Model["Power BI data model"]
     DAX["DAX measures"] --> Model
     Model --> Report["KPI dashboard, trend analysis, category and segment visuals"]
-```
-
-## Project Structure
-
-```text
-src/main/java/com/example/bidashboard
-  controller/      REST endpoints used by Power BI
-  domain/          JPA entities for customers, products, and sales orders
-  dto/             Dashboard response objects
-  exception/       API error response and exception handler
-  repository/      Spring Data JPA aggregation queries
-  service/         Business logic and validation
-src/main/resources
-  application.yml  H2 and JPA configuration
-  data.sql         Seed data
-src/test/java      JUnit and Mockito tests
-data/              CSV source files for Power BI import
-database/          SQL schema and dashboard aggregation queries
-powerbi/
-  power-query/     M scripts for REST and CSV imports
-  dax/             Measures for KPI cards and visuals
-docs/              API examples and dashboard layout notes
 ```
 
 ## Quick Start
@@ -71,27 +49,6 @@ Run tests:
 ```bash
 mvn test
 ```
-
-H2 console:
-
-```text
-http://localhost:8080/h2-console
-JDBC URL: jdbc:h2:mem:bidashboard
-User: sa
-Password:
-```
-
-## API Endpoints
-
-| Method | Endpoint | Purpose |
-| --- | --- | --- |
-| GET | `/api/dashboard/kpis` | Revenue, profit, units sold, order count, AOV, and margin |
-| GET | `/api/dashboard/revenue-trend` | Monthly revenue and profit trend |
-| GET | `/api/dashboard/category-performance` | Revenue, profit, and units by product category |
-| GET | `/api/dashboard/segment-performance` | Revenue, profit, and order count by customer segment and region |
-| GET | `/api/dashboard/sales-records` | Flat fact table for Power BI modeling and DAX measures |
-
-All endpoints accept optional `startDate` and `endDate` query parameters in `yyyy-MM-dd` format. Defaults use the included 2024 sample data.
 
 ## Power BI Report Build
 
