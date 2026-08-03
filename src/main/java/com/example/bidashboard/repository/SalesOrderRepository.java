@@ -14,6 +14,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+
 @Repository
 public interface SalesOrderRepository extends JpaRepository<SalesOrder, Long> {
 
@@ -58,4 +59,3 @@ public interface SalesOrderRepository extends JpaRepository<SalesOrder, Long> {
     List<SalesRecordDto> findSalesRecordsBetween(@Param("startDate") LocalDate startDate,
                                                   @Param("endDate") LocalDate endDate);
 }
-
