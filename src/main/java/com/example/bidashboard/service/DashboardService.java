@@ -15,6 +15,7 @@ import com.example.bidashboard.repository.SalesOrderRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+
 @Service
 @Transactional(readOnly = true)
 public class DashboardService {
@@ -103,4 +104,3 @@ public class DashboardService {
         throw new IllegalArgumentException("Unexpected numeric value: " + value);
     }
 }
-
