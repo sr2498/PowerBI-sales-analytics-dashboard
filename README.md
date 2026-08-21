@@ -80,13 +80,3 @@ The sample data models a small sales organization across three regions and multi
 - Which customer segments and regions are strongest?
 - Are online, partner, and direct channels performing differently?
 
-# Author
-
-**Sandhya Rani**
-
-Master's in Computer Science  
-Machine Learning | Python | Data Science 
-
-New Jersey Institute of Technology (NJIT)
-
-LinkedIn: https://linkedin.com/in/<your-profile>
