@@ -1,13 +1,24 @@
-# Business Intelligence Dashboard - Power BI Project
+# Business Intelligence Dashboard | Power BI & Spring Boot
 
-Portfolio project showing a Java 8 Spring Boot data service that feeds a Power BI business intelligence dashboard. The project includes REST APIs, SQL aggregation examples, sample data, Power Query scripts, DAX measures, validation, exception handling, and JUnit/Mockito tests.
+A full-stack Business Intelligence portfolio project that combines a **Java 8 Spring Boot REST API** with **Power BI** to analyze and visualize business sales data.
 
-## What This Shows
+The project demonstrates backend API development, database integration, data transformation, business intelligence reporting, testing, validation, and exception handling using **Java, Spring Boot, REST APIs, Hibernate/JPA, SQL, Power BI, Power Query, DAX, JUnit, and Mockito**.
 
-- Built a Java 8 and Spring Boot data service exposing REST APIs for Power BI reporting and business-performance analytics.
-- Implemented persistence with Hibernate/JPA and SQL, using repository and service-layer patterns to retrieve and aggregate dashboard data.
-- Integrated REST and CSV data sources, transformed data with Power Query, and created DAX measures for KPI dashboards, trend analysis, and interactive visuals.
-- Added request validation, centralized exception handling, and tested Java service components with JUnit and Mockito.
+## Project Overview
+
+The application provides business and sales data through Spring Boot REST APIs and transforms the data into interactive Power BI dashboards.
+
+The dashboard is designed to help analyze key business metrics such as:
+
+- Total revenue
+- Profit and profit margin
+- Total orders
+- Average order value
+- Monthly sales trends
+- Product category performance
+- Customer segment performance
+- Regional performance
+- Sales channel performance
 
 ## Architecture
 
