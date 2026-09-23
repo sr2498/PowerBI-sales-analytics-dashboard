@@ -20,6 +20,19 @@ The dashboard is designed to help analyze key business metrics such as:
 - Regional performance
 - Sales channel performance
 
+## Key Features
+
+- Developed RESTful APIs using **Java 8 and Spring Boot** to provide business data for reporting and analytics.
+- Implemented layered architecture using **Controller, Service, Repository, and Model** components.
+- Used **Hibernate/JPA and SQL** for data persistence, retrieval, and aggregation.
+- Integrated REST API and CSV-based data sources with **Power BI**.
+- Used **Power Query** for data loading, cleaning, and transformation.
+- Created **DAX measures** for business KPIs and analytical calculations.
+- Built dashboard visualizations for revenue, profit, trends, categories, regions, customer segments, and sales channels.
+- Implemented request validation and centralized exception handling for REST APIs.
+- Developed unit tests using **JUnit and Mockito** for service-layer functionality.
+- Included sample data and SQL examples to make the project easy to run and demonstrate.
+
 ## Architecture
 
 ```mermaid
