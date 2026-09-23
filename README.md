@@ -33,6 +33,20 @@ The dashboard is designed to help analyze key business metrics such as:
 - Developed unit tests using **JUnit and Mockito** for service-layer functionality.
 - Included sample data and SQL examples to make the project easy to run and demonstrate.
 
+## Technology Stack
+
+| Area | Technologies |
+|---|---|
+| Backend | Java 8, Spring Boot |
+| API | RESTful APIs, JSON |
+| Database | H2, SQL |
+| Persistence | Hibernate, JPA |
+| Business Intelligence | Power BI |
+| Data Transformation | Power Query |
+| Analytics | DAX |
+| Testing | JUnit, Mockito |
+| Build Tool | Maven |
+
 ## Architecture
 
 ```mermaid
